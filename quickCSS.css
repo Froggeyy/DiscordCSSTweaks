@@ -27,6 +27,9 @@
  \______/  \______/ |_______/    \___/   \______/ |__/ |__/ |__/         |__/ \_____/\___/  \_______/ \_______/|__/  \__/|_______/ 
 */
 
+/*Hides clan tags.*/
+.clanTag_f4aadc {display: none;}
+
 /*Removes the gift button next to the emoji picker.*/
 button[aria-label="Send a gift"] {
     display: none;
