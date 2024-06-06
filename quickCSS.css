@@ -13,8 +13,8 @@
 @import url("https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css");
 @import url("https://discord-extensions.github.io/modern-indicators/src/source.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
-@import url("https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/SettingsModal/SettingsModal.theme.css");
-@import url("https://raw.githubusercontent.com/moistp1ckle/GitHub_Dark/main/source.css");
+@import url("https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/SettingsModal/SettingsModal.theme.css"); 
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
 
 /*
   /$$$$$$                        /$$                                   /$$$$$$$$                                /$$                
@@ -26,6 +26,16 @@
 |  $$$$$$/|  $$$$$$/ /$$$$$$$/  |  $$$$/|  $$$$$$/| $$ | $$ | $$         | $$|  $$$$$/$$$$/|  $$$$$$$|  $$$$$$$| $$ \  $$ /$$$$$$$/
  \______/  \______/ |_______/    \___/   \______/ |__/ |__/ |__/         |__/ \_____/\___/  \_______/ \_______/|__/  \__/|_______/ 
 */
+
+/*Corrects the theme colour on the "Create Your Server" popup.*/
+.container__2e9cc, .footer__2e356, .footer__31f8d {background-color: #;}
+.footerButton__5a20d {background-color:  # !important;}
+.inputInner__61a8f {background-color: #;}
+.quickswitcher_b5bb0a {background-color: #;}
+.input__2a648 {background-color: #;}
+
+/*Corrects the theme colour on the discorvery page.*/
+
 
 /*Removes the gift button next to the emoji picker.*/
 button[aria-label="Send a gift"] {
