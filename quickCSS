@@ -1,0 +1,119 @@
+/*
+ /$$$$$$$                                                   /$$                 /$$$$$$$$                                /$$                
+| $$__  $$                                                 | $$                |__  $$__/                               | $$                
+| $$  \ $$ /$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$   /$$$$$$$  /$$$$$$          | $$ /$$  /$$  /$$  /$$$$$$   /$$$$$$ | $$   /$$  /$$$$$$$
+| $$$$$$$//$$__  $$ /$$__  $$| $$_  $$_  $$ |____  $$ /$$__  $$ /$$__  $$         | $$| $$ | $$ | $$ /$$__  $$ |____  $$| $$  /$$/ /$$_____/
+| $$____/| $$  \__/| $$$$$$$$| $$ \ $$ \ $$  /$$$$$$$| $$  | $$| $$$$$$$$         | $$| $$ | $$ | $$| $$$$$$$$  /$$$$$$$| $$$$$$/ |  $$$$$$ 
+| $$     | $$      | $$_____/| $$ | $$ | $$ /$$__  $$| $$  | $$| $$_____/         | $$| $$ | $$ | $$| $$_____/ /$$__  $$| $$_  $$  \____  $$
+| $$     | $$      |  $$$$$$$| $$ | $$ | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$         | $$|  $$$$$/$$$$/|  $$$$$$$|  $$$$$$$| $$ \  $$ /$$$$$$$/
+|__/     |__/       \_______/|__/ |__/ |__/ \_______/ \_______/ \_______/         |__/ \_____/\___/  \_______/ \_______/|__/  \__/|_______/ 
+*/
+
+@import url("https://raw.githubusercontent.com/NYRI4/Discolored/master/main.css");
+@import url("https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css");
+@import url("https://discord-extensions.github.io/modern-indicators/src/source.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/SettingsModal/SettingsModal.theme.css");
+
+/*
+  /$$$$$$                        /$$                                   /$$$$$$$$                                /$$                
+ /$$__  $$                      | $$                                  |__  $$__/                               | $$                
+| $$  \__/ /$$   /$$  /$$$$$$$ /$$$$$$    /$$$$$$  /$$$$$$/$$$$          | $$ /$$  /$$  /$$  /$$$$$$   /$$$$$$ | $$   /$$  /$$$$$$$
+| $$      | $$  | $$ /$$_____/|_  $$_/   /$$__  $$| $$_  $$_  $$         | $$| $$ | $$ | $$ /$$__  $$ |____  $$| $$  /$$/ /$$_____/
+| $$      | $$  | $$|  $$$$$$   | $$    | $$  \ $$| $$ \ $$ \ $$         | $$| $$ | $$ | $$| $$$$$$$$  /$$$$$$$| $$$$$$/ |  $$$$$$ 
+| $$    $$| $$  | $$ \____  $$  | $$ /$$| $$  | $$| $$ | $$ | $$         | $$| $$ | $$ | $$| $$_____/ /$$__  $$| $$_  $$  \____  $$
+|  $$$$$$/|  $$$$$$/ /$$$$$$$/  |  $$$$/|  $$$$$$/| $$ | $$ | $$         | $$|  $$$$$/$$$$/|  $$$$$$$|  $$$$$$$| $$ \  $$ /$$$$$$$/
+ \______/  \______/ |_______/    \___/   \______/ |__/ |__/ |__/         |__/ \_____/\___/  \_______/ \_______/|__/  \__/|_______/ 
+*/
+
+/*Removes the gift button next to the emoji picker.*/
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/*Removes the nitro and shop tab from your messages screen.*/
+a[href="/store"] { display: none; }
+a[href="/shop"] { display: none; }
+
+/*Reverts the moreusertags font change, and makes the tags capitalised.*/
+.botText_daff56 {
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+/*For use with pinned tabs, reduces the amount of space between different pinned sections.*/
+.privateChannelsHeaderContainer_b22dc9 {
+height: 40px;
+}
+
+/*For use with pinned tabs, removes the name of the tabs.*/
+.headerText__88997 {
+  display: none;
+}
+
+/*For use with pinned tabs, removes the "Create DM" button.*/
+.privateChannelRecipientsInviteButtonIcon__459c2 {
+  display: none;
+}
+
+/*For use with pinned tabs, removes the collapse arrow icon.*/
+.vc-pindms-collapse-icon {
+  display: none;
+}
+
+/*For use with pinned tabs, shows all related hidden elements when hovered over.*/
+.privateChannelsHeaderContainer_b22dc9:hover {
+  height: 40px !important;
+}
+.privateChannelsHeaderContainer_b22dc9:hover .vc-pindms-collapse-icon {
+  display: block !important;
+}
+.privateChannelsHeaderContainer_b22dc9:hover .privateChannelRecipientsInviteButtonIcon__459c2 {
+  display: block !important;
+}
+.privateChannelsHeaderContainer_b22dc9:hover .headerText__88997 {
+  display: block !important;
+}
+
+/*Removes the quests tab from the gift inventory*/
+.questsContainer__0b371, .divider_e6f9ab {
+  display: none !important;
+}
+
+/*Compacts the discord members sidebar and channel sidebar when not in fullscreen (they are restored when hovered over).*/
+@media (max-width: 1080px) {
+  .container_f79ab4 {
+    width: 60px !important;
+  }
+  .container_f79ab4:hover {
+    width: 230px !important;
+  }
+  .membersGroup_cad095,
+  .vc-membercount-member-list,
+  .vc-membercount-widget,
+  .content_e8a0d1 {
+    display: none !important;
+  }
+  .container_f79ab4:hover .membersGroup_cad095,
+  .container_f79ab4:hover .vc-membercount-member-list,
+  .container_f79ab4:hover .vc-membercount-widget,
+  .container_f79ab4:hover .content_e8a0d1 {
+    display: block !important;
+  }
+  .sidebar_e031be {
+    width: 48px !important;
+  }
+  .dropdownButton_a246fc {
+    display: none !important;
+  }
+  .sidebar_e031be:hover {
+    width: 240px !important;
+  }
+  .sidebar_e031be:hover .dropdownButton_a246fc {
+    display: block !important;
+  }
+  .container__8567b,
+  .containerWithMargin__3a652 {
+    display: none;
+  }
+}
