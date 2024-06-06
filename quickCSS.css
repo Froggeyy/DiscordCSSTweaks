@@ -27,16 +27,6 @@
  \______/  \______/ |_______/    \___/   \______/ |__/ |__/ |__/         |__/ \_____/\___/  \_______/ \_______/|__/  \__/|_______/ 
 */
 
-/*Corrects the theme colour on the "Create Your Server" popup.*/
-.container__2e9cc, .footer__2e356, .footer__31f8d {background-color: #;}
-.footerButton__5a20d {background-color:  # !important;}
-.inputInner__61a8f {background-color: #;}
-.quickswitcher_b5bb0a {background-color: #;}
-.input__2a648 {background-color: #;}
-
-/*Corrects the theme colour on the discorvery page.*/
-
-
 /*Removes the gift button next to the emoji picker.*/
 button[aria-label="Send a gift"] {
     display: none;
