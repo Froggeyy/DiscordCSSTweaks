@@ -85,7 +85,7 @@ a[href="/store"], a[href="/shop"] {display: none;}
 	h3.name_a08117 .overflow_c74e70 {visibility: hidden; position: relative;}
 	h3.name_a08117 .overflow_c74e70::after {content: "..."; visibility: visible; position: absolute; left: 0; top: 0;}
 	.addButtonIcon_a08117 {display: none;}
-    div[aria-label="Voice (Limited) icon"] .icon_d8bfb3 {position: relative; left: 4px;}
+	div[aria-label="Voice (Limited) icon"] .icon_d8bfb3 {position: relative; left: 4px;}
 
 	/*Restores and scales server elements accordingly when the sidebar is hovered over*/
 	.sidebar_a4d4d9:hover .headerContent_fd6364 {clip-path: revert;}
@@ -96,7 +96,7 @@ a[href="/store"], a[href="/shop"] {display: none;}
 	.sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70 {visibility: revert; position: revert;}
 	.sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70::after {content: revert; visibility: revert; position: revert; left: revert; top: revert;}
 	.sidebar_a4d4d9:hover .addButtonIcon_a08117 {display: revert;}
-    .sidebar_a4d4d9:hover div[aria-label="Voice (Limited) icon"] .icon_d8bfb3 {position: revert; left: revert;}
+	.sidebar_a4d4d9:hover div[aria-label="Voice (Limited) icon"] .icon_d8bfb3 {position: revert; left: revert;}
 
 	/*Collapses the member list when not hovered over.*/
 	.container_cbd271 {width: 60px;}
