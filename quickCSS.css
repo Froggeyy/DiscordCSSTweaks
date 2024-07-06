@@ -260,7 +260,15 @@ a[href="/shop"] {
 		visibility: hidden
 	}
 
-	.container_cbd271 .vc-membercount-widget {
+    .vc-membercount-online-dot {
+        visibility: hidden;
+    }
+
+	.container_cbd271:hover .vc-membercount-widget {
 		visibility: revert
 	}
+
+    .container_cbd271:hover .vc-membercount-online-dot {
+        visibility: revert;
+    }
 }
