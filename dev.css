@@ -1,9 +1,7 @@
-/*@import url('https://B4T3S.github.io/Fallout4TerminalTheme/css/crtEffect.css');*/
 @import url("https://raw.githubusercontent.com/NYRI4/Discolored/master/main.css");
 @import url("https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
 @import url("https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/SettingsModal/SettingsModal.theme.css");
-/*@import url("https://refact0r.github.io/system24/system24.css");*/
 
 /*Blocks a quest popup while in vc.*/
 .wrapper_b9619e {display: none;}
@@ -17,8 +15,11 @@
 /*Blocks the question mark icon in the top right of the screen.*/
 a[href="https://support.discord.com"] {display: none;}
 
-/*Removes the gift button next to the emoji picker.*/
-button[aria-label="Send a gift"] {display: none;}
+/*Hides the gaming activity in the user sidebar*/
+.container_c64476 {display: none;}
+
+/*Removes the gift, emoji and sticker button(s) next to the gif picker.*/
+[aria-label="Send a gift"], [aria-label="Open sticker picker"], .channelAppLauncher_df39bd {display: none;}
 
 /*Removes the nitro and shop tab from your messages screen.*/
 a[href="/store"], a[href="/shop"] {display: none;}
@@ -41,7 +42,7 @@ a[href="/store"], a[href="/shop"] {display: none;}
 .privateChannelsHeaderContainer_c47fa9:hover .headerText_c47fa9 {display: block !important;}
 
 /*Removes the quests tab from the gift inventory*/
-.questsContainer_f1791d {display: none !important;}
+.container_c1cce6 {display: none !important;}
 
 /*Removes the add to dictionary context menu item.*/
 #textarea-context-add-to-dictionary {display: none;}
@@ -81,34 +82,33 @@ a[href="/store"], a[href="/shop"] {display: none;}
 	.sidebar_a4d4d9:hover button[aria-label="Stop Streaming"] {display: revert;}
 
 	/*Hides and scales server elements accordingly when the sidebar is shrunk.*/
-	.headerContent_fd6364 {clip-path: inset(100%);}
-	.actionIcon_f6f816 {display: none;}
-	.userAvatar_ac3629 {position: relative; right: 32px;}
-	li.selected_f6f816 .icon_d8bfb3 {position: relative; left: 2px;}
-	div.modeConnected_d8bfb3 .icon_d8bfb3 {position: relative; left: 4px;}
-	div.content_cc29d1 .icon_d8bfb3 {position: relative; right: 5px;}
-	.sectionDivider_c43953 {position: relative; right: 10px;}
 	h3.name_a08117 .overflow_c74e70 {visibility: hidden; position: relative;}
 	h3.name_a08117 .overflow_c74e70::after {content: "..."; visibility: visible; position: absolute; left: 0; top: 0;}
+	li.selected_f6f816 .icon_d8bfb3 {position: relative; left: 4px;}
+	.actionIcon_f6f816 {display: none;}
 	.addButtonIcon_a08117 {display: none;}
-	div[aria-label="Voice (Limited) icon"] .icon_d8bfb3 {position: relative; left: 6px;}
-	li.selected_f6f816 div[aria-label="Text (Limited) icon"] .icon_d8bfb3 {position: relative; left: 4px;}
+	div.modeConnected_d8bfb3 [aria-label="Voice icon"] {position: relative; left: 4px;}
+	.userAvatar_ac3629 {position: relative; right: 34px;}
+	.headerContent_fd6364 {clip-path: inset(100%);}
+	div.content_cc29d1 .icon_d8bfb3 {position: relative; right: 1px;}
+	div.modeConnected_d8bfb3 [aria-label="Voice (Limited) icon"] {position: relative; left: 6px;}
+	.sectionDivider_c43953 {position: relative; right: 8px;}
 
 	/*Restores and scales server elements accordingly when the sidebar is hovered over*/
-	.sidebar_a4d4d9:hover .headerContent_fd6364 {clip-path: revert;}
-	.sidebar_a4d4d9:hover .actionIcon_f6f816 {display: revert;}
-	.sidebar_a4d4d9:hover .userAvatar_ac3629 {position: revert; right: revert;}
-	.sidebar_a4d4d9:hover .selected_f6f816 .icon_d8bfb3 {position: revert; left: revert;}
-	.sidebar_a4d4d9:hover div.modeConnected_d8bfb3 .icon_d8bfb3 {position: revert; left: revert;}
 	.sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70 {visibility: revert; position: revert;}
 	.sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70::after {content: revert; visibility: revert; position: revert; left: revert; top: revert;}
+	.sidebar_a4d4d9:hover .actionIcon_f6f816 {display: revert;}
 	.sidebar_a4d4d9:hover .addButtonIcon_a08117 {display: revert;}
-	.sidebar_a4d4d9:hover div[aria-label="Voice (Limited) icon"] .icon_d8bfb3 {position: revert; left: revert;}
-	.sidebar_a4d4d9:hover li.selected_f6f816 div[aria-label="Text (Limited) icon"] .icon_d8bfb3 {position: revert; left: revert;}
+	.sidebar_a4d4d9:hover .selected_f6f816 .icon_d8bfb3 {position: revert; left: revert;}
+	.sidebar_a4d4d9:hover .headerContent_fd6364 {clip-path: revert;}
+	.sidebar_a4d4d9:hover .userAvatar_ac3629 {position: revert; right: revert;}
+	.sidebar_a4d4d9:hover div.modeConnected_d8bfb3 [aria-label="Voice icon"] {position: revert; left: revert;}
+	.sidebar_a4d4d9:hover div.modeConnected_d8bfb3 [aria-label="Voice (Limited) icon"] {position: revert; left: revert;}
 
 	/*Collapses the member list when not hovered over.*/
 	.container_cbd271 {width: 60px;}
 	.container_cbd271:hover {width: 240px;}
+	/*WIP (will collapse the members bar in group chats when done)*/
 	/*
 	.membersWrap_cbd271 {width: 60px;}
 	.membersWrap_cbd271 {position: relative; left: 180px;}
@@ -123,4 +123,9 @@ a[href="/store"], a[href="/shop"] {display: none;}
 	/*Restores and scales member list elements when the member list is hovered over*/
 	.container_cbd271 .vc-membercount-widget {visibility: revert;}
 	.container_cbd271:hover .vc-membercount-online-dot {visibility: revert;}
+
+	.container_b2ca13 .flex_bba380 {clip-path: inset(100%);}
+	.container_b2ca13 .nameTag_b2ca13 {clip-path: inset(100%);}
+	.sidebar_a4d4d9:hover .container_b2ca13 .flex_bba380 {clip-path: revert;}
+	.sidebar_a4d4d9:hover .container_b2ca13 .nameTag_b2ca13 {clip-path: revert;}
 }
