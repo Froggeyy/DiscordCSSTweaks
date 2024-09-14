@@ -1,325 +1,345 @@
-/*
- /$$$$$$$                                                   /$$                 /$$$$$$$$                                /$$                
-| $$__  $$                                                 | $$                |__  $$__/                               | $$                
-| $$  \ $$ /$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$   /$$$$$$$  /$$$$$$          | $$ /$$  /$$  /$$  /$$$$$$   /$$$$$$ | $$   /$$  /$$$$$$$
-| $$$$$$$//$$__  $$ /$$__  $$| $$_  $$_  $$ |____  $$ /$$__  $$ /$$__  $$         | $$| $$ | $$ | $$ /$$__  $$ |____  $$| $$  /$$/ /$$_____/
-| $$____/| $$  \__/| $$$$$$$$| $$ \ $$ \ $$  /$$$$$$$| $$  | $$| $$$$$$$$         | $$| $$ | $$ | $$| $$$$$$$$  /$$$$$$$| $$$$$$/ |  $$$$$$ 
-| $$     | $$      | $$_____/| $$ | $$ | $$ /$$__  $$| $$  | $$| $$_____/         | $$| $$ | $$ | $$| $$_____/ /$$__  $$| $$_  $$  \____  $$
-| $$     | $$      |  $$$$$$$| $$ | $$ | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$         | $$|  $$$$$/$$$$/|  $$$$$$$|  $$$$$$$| $$ \  $$ /$$$$$$$/
-|__/     |__/       \_______/|__/ |__/ |__/ \_______/ \_______/ \_______/         |__/ \_____/\___/  \_______/ \_______/|__/  \__/|_______/ 
-*/
-
 @import url("https://raw.githubusercontent.com/NYRI4/Discolored/master/main.css");
-
 @import url("https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css");
-
-@import url("https://discord-extensions.github.io/modern-indicators/src/source.css");
-
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
-
 @import url("https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/SettingsModal/SettingsModal.theme.css");
-
-@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha.theme.css");
-
-/*
-  /$$$$$$                        /$$                                   /$$$$$$$$                                /$$                
- /$$__  $$                      | $$                                  |__  $$__/                               | $$                
-| $$  \__/ /$$   /$$  /$$$$$$$ /$$$$$$    /$$$$$$  /$$$$$$/$$$$          | $$ /$$  /$$  /$$  /$$$$$$   /$$$$$$ | $$   /$$  /$$$$$$$
-| $$      | $$  | $$ /$$_____/|_  $$_/   /$$__  $$| $$_  $$_  $$         | $$| $$ | $$ | $$ /$$__  $$ |____  $$| $$  /$$/ /$$_____/
-| $$      | $$  | $$|  $$$$$$   | $$    | $$  \ $$| $$ \ $$ \ $$         | $$| $$ | $$ | $$| $$$$$$$$  /$$$$$$$| $$$$$$/ |  $$$$$$ 
-| $$    $$| $$  | $$ \____  $$  | $$ /$$| $$  | $$| $$ | $$ | $$         | $$| $$ | $$ | $$| $$_____/ /$$__  $$| $$_  $$  \____  $$
-|  $$$$$$/|  $$$$$$/ /$$$$$$$/  |  $$$$/|  $$$$$$/| $$ | $$ | $$         | $$|  $$$$$/$$$$/|  $$$$$$$|  $$$$$$$| $$ \  $$ /$$$$$$$/
- \______/  \______/ |_______/    \___/   \______/ |__/ |__/ |__/         |__/ \_____/\___/  \_______/ \_______/|__/  \__/|_______/ 
-*/
 
 /*Blocks a quest popup while in vc.*/
 .wrapper_b9619e {
-	display: none;
+  display: none;
+}
+
+/*Blocks a quest popup above the game status bar*/
+.wrapper_c721cc {
+  display: none;
 }
 
 /*Removes the clan tag from the member list.*/
 .clanTag_a31c43 {
-	display: none;
+  display: none;
 }
 
-/*Removes the gift button next to the emoji picker.*/
-button[aria-label="Send a gift"] {
-	display: none;
+/*Blocks the question mark icon in the top right of the screen.*/
+a[href="https://support.discord.com"] {
+  display: none;
+}
+
+/*Hides the gaming activity in the user sidebar*/
+.container_c64476 {
+  display: none;
+}
+
+/*Removes the gift, emoji and sticker button(s) next to the gif picker.*/
+[aria-label="Send a gift"],
+[aria-label="Open sticker picker"],
+.channelAppLauncher_df39bd {
+  display: none;
 }
 
 /*Removes the nitro and shop tab from your messages screen.*/
 a[href="/store"],
 a[href="/shop"] {
-	display: none;
+  display: none;
 }
 
 /*Reverts the moreusertags font change, and makes the tags capitalised.*/
-.botText_a02df3 {
-	font-weight: normal;
-	text-transform: capitalize;
+.botText_a9e77f {
+  font-weight: normal;
+  text-transform: capitalize;
 }
 
 /*For use with pinned tabs, removes the name of the tabs.*/
 .headerText_c47fa9 {
-	display: none;
+  display: none;
 }
 
 /*For use with pinned tabs, removes the "Create DM" button.*/
 .privateChannelRecipientsInviteButtonIcon_c47fa9 {
-	display: none;
+  display: none;
 }
 
 /*For use with pinned tabs, removes the collapse arrow icon.*/
 .vc-pindms-collapse-icon {
-	display: none;
+  display: none;
 }
 
 /*For use with pinned tabs, shows all related hidden elements when hovered over.*/
 .privateChannelsHeaderContainer_c47fa9:hover .vc-pindms-collapse-icon {
-	display: block !important;
+  display: block !important;
 }
 
 .privateChannelsHeaderContainer_c47fa9:hover .privateChannelRecipientsInviteButtonIcon_c47fa9 {
-	display: block !important;
+  display: block !important;
 }
 
 .privateChannelsHeaderContainer_c47fa9:hover .headerText_c47fa9 {
-	display: block !important;
+  display: block !important;
 }
 
 /*Removes the quests tab from the gift inventory*/
-.questsContainer_f1791d {
-	display: none !important;
+.container_c1cce6 {
+  display: none !important;
 }
 
 /*Removes the add to dictionary context menu item.*/
 #textarea-context-add-to-dictionary {
-	display: none;
+  display: none;
 }
 
 /*Hides the role separator.*/
 .membersGroup_cbd271 {
-	display: none;
+  display: none;
 }
 
 /*Collapses the sidebar and member bar for better chat view in splitscreen.*/
 @media (max-width: 1080px) {
 
-	/*Collapses the sidebar when not hovered over.*/
-	.sidebar_a4d4d9 {
-		width: 48px
-	}
+  /*Collapses the sidebar when not hovered over.*/
+  .sidebar_a4d4d9 {
+    width: 48px
+  }
 
-	.sidebar_a4d4d9:hover {
-		width: 240px
-	}
+  .sidebar_a4d4d9:hover {
+    width: 240px
+  }
 
-	/*Hides and scales voice chat elements accordingly when the sidebar is shrunk.*/
-	.actionButtons_adcaac {
-		clip-path: inset(100%);
-	}
+  /*Hides and scales voice chat elements accordingly when the sidebar is shrunk.*/
+  .actionButtons_adcaac {
+    clip-path: inset(100%);
+  }
 
-	.container_adcaac {
-		height: 92px;
-	}
+  .container_adcaac {
+    height: 92px;
+  }
 
-	.channel_adcaac {
-		display: none;
-	}
+  .channel_adcaac {
+    display: none;
+  }
 
-	.labelWrapper_c02c63 {
-		display: none;
-	}
+  .labelWrapper_c02c63 {
+    display: none;
+  }
 
-	button[aria-label="Noise Suppression powered by Krisp"] {
-		position: absolute;
-		z-index: -1;
-	}
+  button[aria-label="Noise Suppression powered by Krisp"] {
+    position: absolute;
+    z-index: -1;
+  }
 
-	.button_f67531[aria-label="Disconnect"] {
-		position: absolute;
-		z-index: -1;
-	}
+  .button_f67531[aria-label="Disconnect"] {
+    position: absolute;
+    z-index: -1;
+  }
 
-	.ping_c02c63 {
-		width: 35px;
-		height: 35px;
-	}
+  .ping_c02c63 {
+    width: 35px;
+    height: 35px;
+  }
 
-	.connection_adcaac {
-		width: 55px;
-	}
+  .connection_adcaac {
+    width: 55px;
+  }
 
-	.info_bf1a22 {
-		display: none;
-	}
+  .info_bf1a22 {
+    display: none;
+  }
 
-	button[aria-label="Stop Streaming"] {
-		display: none;
-	}
+  button[aria-label="Stop Streaming"] {
+    display: none;
+  }
 
-	/*Restores and scales voice chat elements accordingly when the sidebar is hovered over*/
-	.sidebar_a4d4d9:hover .actionButtons_adcaac {
-		clip-path: revert;
-	}
+  /*Restores and scales voice chat elements accordingly when the sidebar is hovered over*/
+  .sidebar_a4d4d9:hover .actionButtons_adcaac {
+    clip-path: revert;
+  }
 
-	.sidebar_a4d4d9:hover .container_adcaac {
-		height: revert;
-	}
+  .sidebar_a4d4d9:hover .container_adcaac {
+    height: revert;
+  }
 
-	.sidebar_a4d4d9:hover .channel_adcaac {
-		display: revert;
-	}
+  .sidebar_a4d4d9:hover .channel_adcaac {
+    display: revert;
+  }
 
-	.sidebar_a4d4d9:hover .labelWrapper_c02c63 {
-		display: revert;
-	}
+  .sidebar_a4d4d9:hover .labelWrapper_c02c63 {
+    display: revert;
+  }
 
-	.sidebar_a4d4d9:hover button[aria-label="Noise Suppression powered by Krisp"] {
-		position: revert;
-		z-index: revert;
-	}
+  .sidebar_a4d4d9:hover button[aria-label="Noise Suppression powered by Krisp"] {
+    position: revert;
+    z-index: revert;
+  }
 
-	.sidebar_a4d4d9:hover .button_f67531[aria-label="Disconnect"] {
-		position: revert;
-		z-index: revert;
-	}
+  .sidebar_a4d4d9:hover .button_f67531[aria-label="Disconnect"] {
+    position: revert;
+    z-index: revert;
+  }
 
-	.sidebar_a4d4d9:hover .ping_c02c63 {
-		width: revert;
-		height: revert;
-	}
+  .sidebar_a4d4d9:hover .ping_c02c63 {
+    width: revert;
+    height: revert;
+  }
 
-	.sidebar_a4d4d9:hover .connection_adcaac {
-		width: revert;
-	}
+  .sidebar_a4d4d9:hover .connection_adcaac {
+    width: revert;
+  }
 
-	.sidebar_a4d4d9:hover .info_bf1a22 {
-		display: revert;
-	}
+  .sidebar_a4d4d9:hover .info_bf1a22 {
+    display: revert;
+  }
 
-	.sidebar_a4d4d9:hover button[aria-label="Stop Streaming"] {
-		display: revert;
-	}
+  .sidebar_a4d4d9:hover button[aria-label="Stop Streaming"] {
+    display: revert;
+  }
 
-	/*Hides and scales server elements accordingly when the sidebar is shrunk.*/
-	.headerContent_fd6364 {
-		clip-path: inset(100%);
-	}
+  /*Hides and scales server elements accordingly when the sidebar is shrunk.*/
+  h3.name_a08117 .overflow_c74e70 {
+    visibility: hidden;
+    position: relative;
+  }
 
-	.actionIcon_f6f816 {
-		display: none;
-	}
+  h3.name_a08117 .overflow_c74e70::after {
+    content: "...";
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 
-	.userAvatar_ac3629 {
-		position: relative;
-		right: 32px;
-	}
+  li.selected_f6f816 .icon_d8bfb3 {
+    position: relative;
+    left: 4px;
+  }
 
-	li.selected_f6f816 .icon_d8bfb3 {
-		position: relative;
-		left: 2px;
-	}
+  .actionIcon_f6f816 {
+    display: none;
+  }
 
-	div.modeConnected_d8bfb3 .icon_d8bfb3 {
-		position: relative;
-		left: 4px;
-	}
+  .addButtonIcon_a08117 {
+    display: none;
+  }
 
-	div.content_cc29d1 .icon_d8bfb3 {
-		position: relative;
-		right: 5px;
-	}
+  div.modeConnected_d8bfb3 [aria-label="Voice icon"] {
+    position: relative;
+    left: 4px;
+  }
 
-	.sectionDivider_c43953 {
-		position: relative;
-		right: 10px;
-	}
+  .userAvatar_ac3629 {
+    position: relative;
+    right: 34px;
+  }
 
-	h3.name_a08117 .overflow_c74e70 {
-		visibility: hidden;
-		position: relative;
-	}
+  .headerContent_fd6364 {
+    clip-path: inset(100%);
+  }
 
-	h3.name_a08117 .overflow_c74e70::after {
-		content: "...";
-		visibility: visible;
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
+  div.content_cc29d1 .icon_d8bfb3 {
+    position: relative;
+    right: 1px;
+  }
 
-	.addButtonIcon_a08117 {
-		display: none;
-	}
+  div.modeConnected_d8bfb3 [aria-label="Voice (Limited) icon"] {
+    position: relative;
+    left: 6px;
+  }
 
-	/*Restores and scales server elements accordingly when the sidebar is hovered over*/
-	.sidebar_a4d4d9:hover .headerContent_fd6364 {
-		clip-path: revert;
-	}
+  .sectionDivider_c43953 {
+    position: relative;
+    right: 8px;
+  }
 
-	.sidebar_a4d4d9:hover .actionIcon_f6f816 {
-		display: revert;
-	}
+  /*Restores and scales server elements accordingly when the sidebar is hovered over*/
+  .sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70 {
+    visibility: revert;
+    position: revert;
+  }
 
-	.sidebar_a4d4d9:hover .userAvatar_ac3629 {
-		position: revert;
-		right: revert;
-	}
+  .sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70::after {
+    content: revert;
+    visibility: revert;
+    position: revert;
+    left: revert;
+    top: revert;
+  }
 
-	.sidebar_a4d4d9:hover .selected_f6f816 .icon_d8bfb3 {
-		position: revert;
-		left: revert;
-	}
+  .sidebar_a4d4d9:hover .actionIcon_f6f816 {
+    display: revert;
+  }
 
-	.sidebar_a4d4d9:hover div.modeConnected_d8bfb3 .icon_d8bfb3 {
-		position: revert;
-		left: revert;
-	}
+  .sidebar_a4d4d9:hover .addButtonIcon_a08117 {
+    display: revert;
+  }
 
-	.sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70 {
-		visibility: revert;
-		position: revert;
-	}
+  .sidebar_a4d4d9:hover .selected_f6f816 .icon_d8bfb3 {
+    position: revert;
+    left: revert;
+  }
 
-	.sidebar_a4d4d9:hover h3.name_a08117 .overflow_c74e70::after {
-		content: revert;
-		visibility: revert;
-		position: revert;
-		left: revert;
-		top: revert;
-	}
+  .sidebar_a4d4d9:hover .headerContent_fd6364 {
+    clip-path: revert;
+  }
 
-	.sidebar_a4d4d9:hover .addButtonIcon_a08117 {
-		display: revert;
-	}
+  .sidebar_a4d4d9:hover .userAvatar_ac3629 {
+    position: revert;
+    right: revert;
+  }
 
-	/*Collapses the member list when not hovered over.*/
-	.container_cbd271 {
-		width: 60px;
-	}
+  .sidebar_a4d4d9:hover div.modeConnected_d8bfb3 [aria-label="Voice icon"] {
+    position: revert;
+    left: revert;
+  }
 
-	.container_cbd271:hover {
-		width: 230px;
-	}
+  .sidebar_a4d4d9:hover div.modeConnected_d8bfb3 [aria-label="Voice (Limited) icon"] {
+    position: revert;
+    left: revert;
+  }
 
-	/*Hides and scales member list elements accordingly when shrunk*/
-	.vc-membercount-widget {
-		visibility: hidden
-	}
+  /*Collapses the member list when not hovered over.*/
+  .container_cbd271 {
+    width: 60px;
+  }
 
-	.vc-membercount-online-dot {
-		visibility: hidden;
-	}
+  .container_cbd271:hover {
+    width: 240px;
+  }
 
-	/*Restores and scales member list elements when the member list is hovered over*/
-	.container_cbd271 .vc-membercount-widget {
-		visibility: revert;
-	}
+  /*WIP (will collapse the members bar in group chats when done)*/
+  /*
+	.membersWrap_cbd271 {width: 60px;}
+	.membersWrap_cbd271 {position: relative; left: 180px;}
+	.membersWrap_cbd271:hover {width: 240px;}
+	.membersWrap_cbd271:hover {position: relative; left: revert;}
+	*/
 
-	.container_cbd271:hover .vc-membercount-online-dot {
-		visibility: revert;
+  /*Hides and scales member list elements accordingly when shrunk*/
+  .membersWrap_cbd271 .vc-membercount-widget {
+    visibility: hidden
+  }
 
-	}
+  .membersWrap_cbd271 .vc-membercount-online-dot {
+    visibility: hidden;
+  }
 
+  /*Restores and scales member list elements when the member list is hovered over*/
+  .container_cbd271 .vc-membercount-widget {
+    visibility: revert;
+  }
+
+  .container_cbd271:hover .vc-membercount-online-dot {
+    visibility: revert;
+  }
+
+  .container_b2ca13 .flex_bba380 {
+    clip-path: inset(100%);
+  }
+
+  .container_b2ca13 .nameTag_b2ca13 {
+    clip-path: inset(100%);
+  }
+
+  .sidebar_a4d4d9:hover .container_b2ca13 .flex_bba380 {
+    clip-path: revert;
+  }
+
+  .sidebar_a4d4d9:hover .container_b2ca13 .nameTag_b2ca13 {
+    clip-path: revert;
+  }
 }
